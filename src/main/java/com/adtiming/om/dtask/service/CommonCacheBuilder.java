@@ -30,8 +30,8 @@ public class CommonCacheBuilder extends PbBuiler {
 
     @Scheduled(fixedDelay = 2 * 60000)
     public void buildCache() {
-        if (!cfg.isProd())
-            return;
+        // if (!cfg.isProd())
+        //     return;
         try {
             lock.lock();
             log.debug("start to build cache");

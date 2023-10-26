@@ -39,8 +39,8 @@ public class StatBuilder extends PbBuiler {
 
     @PostConstruct
     private void init() {
-        if (!cfg.isProd())
-            return;
+        // if (!cfg.isProd())
+        //     return;
         threadPoolTaskScheduler.getScheduledExecutor().schedule(this::buildCache, 30, TimeUnit.SECONDS);
     }
 

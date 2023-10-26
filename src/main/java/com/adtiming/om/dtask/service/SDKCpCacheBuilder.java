@@ -32,9 +32,9 @@ public class SDKCpCacheBuilder extends PbBuiler {
 
     @Scheduled(fixedDelay = 60000)
     private void buildCache() {
-        if (!cfg.isProd()) {
-            return;
-        }
+        // if (!cfg.isProd()) {
+        //     return;
+        // }
         long start = System.currentTimeMillis();
         LOG.debug("build cross promotion cache start");
         if (!prepareData()) {

@@ -42,9 +42,9 @@ public class SDKCacheBuilder extends PbBuiler {
 
     @Scheduled(fixedDelay = 60000)
     private void buildCache() {
-        if (cfg.isDev()) {
-            return;
-        }
+        // if (cfg.isDev()) {
+        //     return;
+        // }
         long start = System.currentTimeMillis();
         log.debug("build sdk cache start");
 

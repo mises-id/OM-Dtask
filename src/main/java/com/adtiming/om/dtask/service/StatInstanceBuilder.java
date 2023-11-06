@@ -75,8 +75,8 @@ public class StatInstanceBuilder extends PbBuiler {
         adNetworkDelay.put(20, 14);//SigMob
         adNetworkDelay.put(21, 10);//KuaiShou
         adNetworkDelay.put(23, 10);//PubNative
-        // if (cfg.isDev())
-        //     return;
+        if (cfg.isDev())
+            return;
         threadPoolTaskScheduler.getScheduledExecutor().schedule(this::buildCache, 30, TimeUnit.SECONDS);
     }
 

@@ -52,7 +52,8 @@ public class AppConfig {
     }
 
     public boolean isDev() {
-        return appEnv == AppEnv.dev;
+        return false;
+        //return appEnv == AppEnv.dev;
     }
 
     public boolean isStopping() {
